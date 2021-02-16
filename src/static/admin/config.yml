@@ -10,7 +10,7 @@ public_folder: "/img"
 collections:
   - name: "news"
     label: "News"
-    folder: "news"
+    folder: "src/news"
     create: true
     slug: "{{slug}}"
     fields:
@@ -26,7 +26,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "birds"
     label: "Birds"
-    folder: "news"
+    folder: "src/birds"
     create: true
     slug: "{{slug}}"
     fields:

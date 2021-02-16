@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: master
   repo: nikolai-cc/rob-alofs
+  branch: main
   site_domain: nikolai-cc.github.io
 
 media_folder: "/src/static/img"

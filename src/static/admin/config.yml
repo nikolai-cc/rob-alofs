@@ -20,7 +20,7 @@ collections:
           default: "item.njk",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Date", name: "date", widget: "datetime", time_format: false }
       - { label: "Featured Image", name: "image", widget: "image" }
       - {
           image: "Opties",

@@ -4,7 +4,7 @@ backend:
   repo: nikolai-cc/rob-alofs
   site_domain: focused-johnson-260e4b.netlify.com
 
-media_folder: "static/img"
+media_folder: "src/static/img"
 public_folder: "/img"
 
 collections:

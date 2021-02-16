@@ -22,6 +22,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
+      - {
+          image: "Opties",
+          name: "tags",
+          widget: "select",
+          multiple: true,
+          options: ["news"],
+          default: ["news"],
+        }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "birds"
     label: "Birds"
@@ -46,5 +54,5 @@ collections:
           widget: "select",
           multiple: true,
           options: ["birds", "featured", "young", "breeding"],
-          default: "birds",
+          default: ["birds"],
         }

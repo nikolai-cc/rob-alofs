@@ -2,7 +2,7 @@ backend:
   name: github
   branch: master
   repo: nikolai-cc/rob-alofs
-  site_domain: focused-johnson-260e4b.netlify.com
+  site_domain: nikolai-cc.github.io
 
 media_folder: "/src/static/img"
 public_folder: "/img"
@@ -47,5 +47,5 @@ collections:
           widget: "select",
           multiple: true,
           options: ["birds", "featured", "young", "breeding"],
-          default: "birds"
+          default: "birds",
         }

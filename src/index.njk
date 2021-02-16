@@ -1,8 +1,4 @@
----
-layout: base
-title: Home
-menu: home
----
+--- layout: base title: Home menu: home ---
 
 <!-- welcome card -->
 <div class="bg-white sm:rounded-sm shadow text-center sm:px-8 pt-14 pb-8 mx-8 sm:mx-0">
@@ -31,7 +27,7 @@ menu: home
     <!-- featured card -->
 
     <div class="bg-white rounded-sm overflow-hidden shadow transform hover:rotate-1 transition duration-200">
-      <img class="w-full h-36 object-cover" src="{{  bird.data.image }}" alt="{{  bird.data.name }}"/>
+      <img class="w-full h-36 object-cover" src="{{  bird.data.image | url }}" alt="{{  bird.data.name }}"/>
       <p class="text-sm my-2 mx-3 font-bold text-gray-500">
         {{  bird.data.name }}
       </p>

@@ -8,35 +8,35 @@
   @font-face {
     font-family: Ubuntu;
     font-weight: 400;
-    src: url("/font/Ubuntu-Regular.ttf");
+    src: url("font/Ubuntu-Regular.ttf");
   }
   @font-face {
     font-family: Ubuntu;
     font-weight: 700;
-    src: url("/font/Ubuntu-Bold.ttf");
+    src: url("font/Ubuntu-Bold.ttf");
   }
   @font-face {
     font-family: Ubuntu;
     font-weight: 300;
-    src: url("/font/Ubuntu-Light.ttf");
+    src: url("font/Ubuntu-Light.ttf");
   }
   @font-face {
     font-family: Ubuntu;
     font-weight: 400;
     font-style: italic;
-    src: url("/font/Ubuntu-Italic.ttf");
+    src: url("font/Ubuntu-Italic.ttf");
   }
   @font-face {
     font-family: Ubuntu;
     font-weight: 700;
     font-style: italic;
-    src: url("/font/Ubuntu-BoldItalic.ttf");
+    src: url("font/Ubuntu-BoldItalic.ttf");
   }
   @font-face {
     font-family: Ubuntu;
     font-weight: 300;
     font-style: italic;
-    src: url("/font/Ubuntu-LightItalic.ttf");
+    src: url("font/Ubuntu-LightItalic.ttf");
   }
 
   .markdown-canvas * {

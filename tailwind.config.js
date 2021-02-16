@@ -11,8 +11,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'birds': "url('/img/bg.jpg')",
-        'pattern': "url('/img/bgpattern.jpg')"
+        'birds': "url('img/bg.jpg')",
+        'pattern': "url('img/bgpattern.jpg')"
       }
     }
   },

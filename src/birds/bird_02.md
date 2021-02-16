@@ -1,7 +1,8 @@
 ---
-name: "Bird 02"
-image: "path/to/src"
-year: 2016
+name: "Young Bird 02 2015"
+image: "/img/yb2.jpg"
+year: 2015
 tags:
   - birds
+  - young
 ---

@@ -1,9 +1,8 @@
 ---
-name: "Bird 0dsa1"
-image: "path/to/src"
+name: "Breeding Bird 05 2015"
+image: "/img/bb5.jpg"
 year: 2015
 tags:
   - birds
-  - featured
-  - young
+  - breeding
 ---

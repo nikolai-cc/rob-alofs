@@ -1,9 +1,8 @@
 ---
-name: "Birddsad 01"
-image: "path/to/src"
-year: 2017
+name: "Young Bird 03 2015"
+image: "/img/yb3.jpg"
+year: 2015
 tags:
   - birds
-  - featured
-  - breeding
+  - young
 ---

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [ "./src/_includes/**/*.njk", "./src/*.html" ],
+  purge: [ "./src/_includes/**/*.njk", "./src/*.html", "./src/*.njk", "./src/*/*.html", "./src/*/*.njk" ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
@@ -11,8 +11,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'birds': "url('../img/bg.jpg')",
-        'pattern': "url('../img/bgpattern.jpg')"
+        'birds': "url('/img/bg.jpg')",
+        'pattern': "url('/img/bgpattern.jpg')"
       }
     }
   },

@@ -2,6 +2,7 @@ backend:
   name: github
   branch: master
   repo: nikolai-cc/rob-alofs
+  site_domain: focused-johnson-260e4b.netlify.com
 
 media_folder: "static/img"
 public_folder: "/img"

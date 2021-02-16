@@ -1,0 +1,49 @@
+backend:
+  name: github
+  branch: master
+  repo: nikolai-cc/rob-alofs
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "news"
+    label: "News"
+    folder: "news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "layout",
+          name: "layout",
+          widget: "hidden",
+          default: "item.njk",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "birds"
+    label: "Birds"
+    folder: "news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - {
+          label: "Year",
+          name: "year",
+          widget: "number",
+          min: 2010,
+          max: 2050,
+          step: 1,
+          default: 2021,
+        }
+      - { image: "Featured Image", name: "image", widget: "image" }
+      - {
+          image: "Opties",
+          name: "tags",
+          widget: "select",
+          multiple: true,
+          options: [],
+        }

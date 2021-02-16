@@ -1,6 +1,6 @@
 # Rob Alofs Budgerigars
 
-Rob Alofs Budgerigars is a website where Rob Alofs can showcase it's Budgerigars.
+Rob Alofs Budgerigars is a website where Rob Alofs can showcase his Budgerigars.
 
 It is based on
 - [11ty](https://www.11ty.dev)

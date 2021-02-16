@@ -1,0 +1,48 @@
+---
+layout: base
+title: Home
+menu: home
+---
+
+<!-- welcome card -->
+<div class="bg-white sm:rounded-sm shadow text-center sm:px-8 pt-14 pb-8 mx-8 sm:mx-0">
+  <h2 class="text-2xl font-bold px-8 sm:px-16 uppercase leading-10 text-gray-700 mb-6">
+    Breeder of Budgerigars, based on the worlds leading bloodlines
+  </h2>
+  <a href="/about" class="mx-auto bg-white px-4 py-2 text-yellow-700 hover:bg-yellow-700 hover:text-white rounded-sm inline-block">
+    Learn More
+  </a>
+</div>
+
+<!-- spacer and featured brids title -->
+
+<div class="mt-8 mb-4 text-center">
+  <h3 class="uppercase text-gray-400 font-bold text-md">
+    Featured Birds
+  </h3>
+</div>
+
+<!-- featured grid -->
+
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 px-8 sm:px-0">
+  {% set featbirds = collections.featured | limit(3) %}
+  {% for bird in featbirds %}
+
+    <!-- featured card -->
+
+    <div class="bg-white rounded-sm overflow-hidden shadow transform hover:rotate-1 transition duration-200">
+      <img class="w-full h-36 object-cover" src="{{  bird.data.image }}" alt="{{  bird.data.name }}"/>
+      <p class="text-sm my-2 mx-3 font-bold text-gray-500">
+        {{  bird.data.name }}
+      </p>
+      <p class="text-xs my-2 mx-3">{{  bird.data.year }}</p>
+    </div>
+
+  {% endfor %}
+
+</div>
+<div class="text-center">
+  <a href="/about" class="my-12 mx-auto bg-white px-4 py-2 text-yellow-700 hover:bg-yellow-700 hover:text-white shadow rounded-sm inline-block">
+    See the birds
+  </a>
+</div>

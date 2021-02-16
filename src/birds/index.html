@@ -1,0 +1,40 @@
+---
+layout: base
+title: Birds
+menu: birds
+---
+
+<div class="mt-8 mb-4 text-center">
+<h3 class="uppercase text-gray-400 font-bold text-2xl">The Birds</h3>
+</div>
+<div class="flex px-8 sm:px-0">
+<a href="{{ '/birds' | url }}"
+class="px-2 py-1 text-xs uppercase font-bold text-white bg-yellow-700 m-2 ml-0 rounded-sm inline-block"
+>
+all
+</a>
+<a href="{{ '/birds/young' | url }}"
+class="px-2 py-1 text-xs uppercase font-bold text-gray-500 m-2 hover:bg-gray-400 hover:text-white rounded-sm inline-block"
+>
+young birds
+</a>
+<a href="{{ '/birds/breeding' | url }}"
+class="px-2 py-1 text-xs uppercase font-bold text-gray-500 m-2 hover:bg-gray-400 hover:text-white rounded-sm inline-block"
+>
+breeding birds
+</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 px-8 sm:px-0">
+
+{% for bird in collections.featured %}
+<!-- featured card -->
+
+<div class="bg-white rounded-sm overflow-hidden shadow transform hover:rotate-1 transition duration-200">
+<img class="w-full h-36 object-cover" src="{{  bird.data.image | url }}" alt="{{  bird.data.name }}"/>
+<p class="text-sm my-2 mx-3 font-bold text-gray-500">
+    {{  bird.data.name }}
+</p>
+<p class="text-xs my-2 mx-3">{{  bird.data.year }}</p>
+</div>
+
+{% endfor %}

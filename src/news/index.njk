@@ -1,0 +1,49 @@
+---
+layout: base
+title: News
+menu: news
+---
+<div class="mt-8 mb-4 text-center">
+    <h3 class="uppercase text-gray-400 font-bold text-2xl">News</h3>
+</div>
+
+<!-- featured grid -->
+
+<div class="grid grid-cols-1 gap-4 px-8 sm:px-0">
+
+    {% for item in collections.news | reverse %}
+    <!-- news item card -->
+
+    <div
+    class="bg-white rounded-sm overflow-hidden shadow flex flex-row h-36"
+    >
+    <img
+        class="w-36 h-36 object-cover"
+        src="{{ item.data.image | url }}"
+        alt="Bird 1"
+    />
+    <div class="flex flex-col justify-between h-36 w-full">
+        <div class="flex-shrink">
+        <p class="text-sm my-2 mx-3 font-bold text-gray-500">
+            {{ item.data.title }}
+        </p>
+        <div
+            class="text-sm my-2 mx-3 text-gray-500 overflow-ellipsis overflow-hidden line-clamp-3"
+        >
+            {% excerpt item %}
+        </div>
+        </div>
+        <div class="flex justify-between items-center">
+        <p class="my-2 mx-3 text-xs text-gray-400">{{ item.data.date.toDateString() }}</p>
+        <a
+            href="{{ item.url | url }}"
+            class="text-xs my-2 mx-3 bg-yellow-700 px-2 py-1 float-right rounded-sm text-white hover:bg-white hover:text-gray-800 inline-block"
+        >
+            Read More
+        </a>
+        </div>
+    </div>
+    </div>
+        
+    {% endfor %}
+</div>

@@ -1,0 +1,41 @@
+<header class="bg-pattern bg-repeat bg-contain pt-8">
+    <div class="max-w-xl mx-auto">
+        <img class="h-36 mx-auto" src="{{ '/img/logo.svg' | url }}" alt="Rob Alofs Logo"/>
+        <nav class="my-8 uppercase font-bold">
+            <ul class="flex place-content-around">
+                <li>
+                    <a class="
+                        {% if menu == 'home' %}
+                        text-gray-400
+                        {% endif %}
+                        hover:text-yellow-700
+                    " href="{{ '/' | url }}">Home</a>
+                </li>
+                <li>
+                    <a class="
+                        {% if menu == 'birds' %}
+                        text-gray-400
+                        {% endif %}
+                        hover:text-yellow-700
+                    " href="{{ '/birds' | url }}">Birds</a>
+                </li>
+                <li>
+                    <a class="
+                        {% if menu == 'news' %}
+                        text-gray-400
+                        {% endif %}
+                        hover:text-yellow-700
+                    " href="{{ '/news' | url }}">News</a>
+                </li>
+                <li>
+                    <a class="
+                        {% if menu == about %}
+                        text-gray-400
+                        {% endif %}
+                        hover:text-yellow-700
+                    " href="{{ '/about' | url }}">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

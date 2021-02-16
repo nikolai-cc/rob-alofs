@@ -1,7 +1,13 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
+const excerpt = require('eleventy-plugin-excerpt');
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
+
+  eleventyConfig.addPlugin(excerpt);
 
   if (process.env.ELEVENTY_PRODUCTION) {
     eleventyConfig.addTransform("htmlmin", htmlminTransform);

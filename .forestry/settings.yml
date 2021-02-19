@@ -8,8 +8,10 @@ sections:
   path: src/birds
   label: Birds
   create: documents
-  match: "**/*"
+  match: "*.md"
   new_doc_ext: md
+  templates:
+  - bird
 - type: directory
   path: src/news
   label: News
